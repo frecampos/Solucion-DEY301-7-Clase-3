@@ -58,7 +58,6 @@ namespace Controlador
                 cmd.Parameters.Add("@rut", SqlDbType.NVarChar, 50).Value = alum.Rut;
                 cmd.Parameters.Add("@nom", SqlDbType.NVarChar, 50).Value = alum.Nombre;
                 cmd.Parameters.Add("@ape", SqlDbType.NVarChar, 50).Value = alum.Apellido;
-                cmd.Parameters.Add("@se", SqlDbType.NChar, 1).Value = alum.sexo;
                 conexion.Open();
                 int x = cmd.ExecuteNonQuery();
                 conexion.Close();
